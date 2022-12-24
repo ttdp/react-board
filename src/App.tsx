@@ -2,6 +2,8 @@ import { useMemo, useState } from "react"
 import { getRandomImage } from "./utils/image"
 import clsx from "clsx"
 
+import Header from "./components/Header"
+
 function App() {
 
   const randImg = useMemo(
@@ -18,7 +20,7 @@ function App() {
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${randImg})`,
       }}>
-      <h2>Here we go</h2>
+      <Header title="Agiee Board" />
     </div>
   )
 }
